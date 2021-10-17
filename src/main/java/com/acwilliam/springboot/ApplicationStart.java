@@ -1,12 +1,13 @@
-package com.acwilliam.springboot.start;
+package com.acwilliam.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
-
+import org.springframework.context.annotation.Configuration;
 
 @EnableAutoConfiguration
-@ComponentScan(basePackages = "com.acwilliam.springboot")
+@ComponentScan
+@Configuration
 public class ApplicationStart {
     public static void main(String[] args) {
         SpringApplication.run(ApplicationStart.class, args);
